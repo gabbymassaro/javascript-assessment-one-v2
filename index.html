@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript Code Challenge</title>
+
+    <!-- BOOTSTRAP 4 STYLING -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+
+    <script type="text/javascript" src="src/index.js"></script>
+    <style>
+      input {
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="col-md-6 col-md-offset-3">
+        <div class="form-group">
+          <form id="comment-form">
+            <label for="add-comment-input"> <h4>Create a New Comment</h4> </label>
+            <input class="form-control" type="text" id="add-comment-input" />
+            <button class="btn btn-success buttons" type="submit" name="comment-button">Create comment</button>
+          </form>
+
+          <hr />
+
+          <label for="filter-comments-input"> <h4>Filter Comments:</h4> </label>
+          <input class="form-control" type="text" id="filter-comments-input" />
+
+          <h4>Your comments: <span style="color:red" id="comments-filter-term"></span></h4>
+
+          <ul id="comment-list" class="list-group">
+            <!-- append comments here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
