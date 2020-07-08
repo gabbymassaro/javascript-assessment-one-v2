@@ -13,7 +13,7 @@ We're building out a comment application. A user should be able to create a new 
 
 ---
 
-## Running the Server
+## The API
 
 Instead of actually accessing the data from a remote server, this challenge uses a package called [json-server](https://github.com/typicode/json-server) to create a fake RESTful JSON API for development and testing.
 
@@ -26,6 +26,10 @@ It is very easy to set-up:
 That's it. You will have a server running on `localhost:3000` that serves the JSON data contained in the `db.json` file.
 
 *Troubleshooting: If this fails, be sure you don't already have something running on port 3000*
+
+---
+
+## The Available Routes
 
 This server will follow normal RESTful routing conventions and will respond with JSON. The endpoints available to you are listed below:
 
@@ -69,9 +73,9 @@ Do not push your changes up to Github. When you finish:
 
 - When the page loads, a user should be able to see all of the already existing comments on the page.
 
-- A user should be able to fill out the comment field, submit the form, and see their new comment on the page as a list item.
-  - **🗝MAJOR KEY ALERT🔑** `json-server` does not have any validations. In case you accidentally create `undefined`, invalid, or empty comments, you can copy the contents of `db-backup.json` into your `db.json` so you can start with valid seed data.
-  - Each comment should have a delete button. Sample markup for a comment might look like this:
+- A user should be able to fill out the comment field, submit the form, and see their new comment on the page as a list item. ( **🗝MAJOR KEY ALERT🔑** `json-server` does not have any validations. In case you accidentally create `undefined`, invalid, or empty comments, you can copy the contents of `db-backup.json` into your `db.json` so you can start with valid seed data. )
+
+- Each comment should have a delete button. Sample markup for a comment might look like this:
 
 ```html
 <li class="list-group-item">
@@ -82,7 +86,7 @@ Do not push your changes up to Github. When you finish:
 
 - A user should be able to delete a particular comment by clicking the delete button. These changes should be present in both the DOM and the server.
 
-### BONUS
+### BONUS (Nothing like this will be on the actual assessment)
 
 - A user should be able to type a search term into the filter comments input
   - The comments list should **only display comments _containing_ the search term**
